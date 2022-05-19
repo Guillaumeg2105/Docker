@@ -14,6 +14,5 @@ stop:
 git:
 
 	git commit -m "update" -a
-	git remote add origin3 git@github.com:Guillaumeg2105/Docker.git
 	git push -u origin3 master
 
