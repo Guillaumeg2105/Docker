@@ -1,0 +1,3 @@
+FROM sameersbn/bind
+
+ENV ROOT_PASSWORD=SecretPass

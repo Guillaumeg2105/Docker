@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  bind:
+    image: test
+    restart: always
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+      - "10000:10000/tcp"
+    volumes:
+      - /home/guillaume/Docker/bind/data/:/data	
+  nginx: 
+    image: tp
+    restart: always
+    volumes:
+      - /home/guillaume/Docker/nginx/conf/:/etc/nginx/conf.d/
+      - /home/guillaume/Docker/nginx/code/intra/:/intra
+      - /home/guillaume/Docker/nginx/code/wiki/:/wiki
+    ports: 
+      - "80:80/tcp"
+      - "8080:8080/tcp"

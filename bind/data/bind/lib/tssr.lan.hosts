@@ -1,0 +1,9 @@
+$ttl 38400
+tssr.lan.	IN	SOA	192.168.50.83. admin.tssr.lan. (
+			1652867235
+			10800
+			3600
+			604800
+			38400 )
+tssr.lan.	IN	NS	192.168.50.83.
+intranet.tssr.lan.	IN	A	192.168.50.83
