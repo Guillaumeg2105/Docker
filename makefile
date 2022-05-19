@@ -12,9 +12,8 @@ stop:
 
 
 git:
-	git init
-	git add /home/guillaume/Docker/
-	git commit -m "first commit"
-	git remote add origin4 git@github.com:Guillaumeg2105/Docker.git
-	git push -u origin4 master
+
+	git commit -m "update" -a
+	git remote add origin3 git@github.com:Guillaumeg2105/Docker.git
+	git push -u origin3 master
 
